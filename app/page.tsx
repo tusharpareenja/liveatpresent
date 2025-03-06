@@ -1,6 +1,6 @@
 "use client"
 
-import HomePge from "./home/page"
+import HomePage from "./homePage/page"
 
 // import { HeroParallax } from "@/components/ui/hero-parallax";
 
@@ -103,7 +103,7 @@ import HomePge from "./home/page"
 export default function Home() {
   return(
  <div>
-    <HomePge />
+    <HomePage />
     {/* <HeroParallax products={products}/> */}
  </div>
   )
