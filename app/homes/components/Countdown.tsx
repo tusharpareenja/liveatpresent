@@ -56,12 +56,22 @@ export default function EventCountdown({ targetDate = new Date("2025-06-17") }: 
         <Image src="/bird.png" alt="Bird silhouette" width={80} height={40} className="opacity-80" />
       </div>
 
-      <div className="absolute bottom-0 left-0 z-20">
+      <motion.div initial={{ x: -200, opacity: 0 }}
+                animate={{ x: 0, opacity: 1 }}
+                transition={{ duration: 1, delay: 0.5, type: "spring" }}
+                  className="absolute bottom-0 left-0 z-20">
         <Image src={design} alt="Decorative swirl" width={300} height={900} className="opacity-80" />
-      </div>
-      <div className="absolute bottom-0 right-0 z-20">
+      </motion.div>
+      <motion.div 
+
+        initial={{ x: 200, opacity: 0 }}
+        animate={{ x: 0, opacity: 1 }}
+        transition={{ duration: 1, delay: 0.5, type: "spring" }}
+      
+      
+      className="absolute bottom-0 right-0 z-20">
         <Image src={design1} alt="Decorative swirl" width={300} height={300} className="opacity-80" />
-      </div>
+      </motion.div>
 
       <div className="container relative z-30 mx-auto px-4">
         <div className="flex flex-col items-center justify-center">
